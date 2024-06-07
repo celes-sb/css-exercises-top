@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -19,7 +20,21 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: left;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+  flex: 2;
+  margin-left: 12px;
+}
+
+.first-line {
+display: flex;
+justify-content: stretch;
 }
 
 .icon {
@@ -50,6 +65,11 @@ body {
   padding: 0;
 }
 
+.text {
+  margin-bottom: 18px;
+  margin-left: 55px;
+}
+
 button {
   cursor: pointer;
   padding: 8px 16px;
@@ -60,6 +80,7 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-left: 55px;
 }
 
 button.cancel {
@@ -67,3 +88,10 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/*
+- The blue icon is aligned to the left.
+- There is equal space on either side of the icon (the gaps between the icon and the edge of the card, and the icon and the text, are the same).
+- The header, text, and buttons are aligned with each other.
+- The close button is vertically aligned with the header, and aligned in the top-right of the card.
+*/
